@@ -1,0 +1,477 @@
+driver,race,race_round,finishing_position,points_estimate,cumulative_points_estimate,is_official
+VER,Australia,1,2.0,18,18,False
+VER,China,2,4.0,12,30,False
+VER,Japan,3,1.0,25,55,False
+VER,Bahrain,4,6.0,8,63,False
+VER,Saudi Arabia,5,2.0,18,81,False
+VER,Miami,6,4.0,12,93,False
+VER,Imola,7,1.0,25,118,False
+VER,Monaco,8,4.0,12,130,False
+VER,Spain,9,5.0,10,140,False
+VER,Canada,10,2.0,18,158,False
+VER,Austria,11,,0,158,False
+VER,Silverstone,12,5.0,10,168,False
+VER,Belgium,13,4.0,12,180,False
+VER,Hungary,14,9.0,2,182,False
+VER,Netherlands,15,2.0,18,200,False
+VER,Italy,16,1.0,25,225,False
+VER,Azerbaijan,17,1.0,25,250,False
+VER,Singapore,18,2.0,18,268,False
+VER,USA,19,1.0,25,293,False
+VER,Mexico,20,3.0,15,308,False
+VER,Brazil,21,3.0,15,323,False
+VER,Las Vegas,22,1.0,25,348,False
+VER,Qatar,23,1.0,25,373,False
+VER,Abu Dhabi,24,1.0,25,398,False
+GAS,Australia,1,11.0,0,0,False
+GAS,China,2,11.0,0,0,False
+GAS,Japan,3,13.0,0,0,False
+GAS,Bahrain,4,7.0,6,6,False
+GAS,Saudi Arabia,5,,0,6,False
+GAS,Miami,6,13.0,0,6,False
+GAS,Imola,7,13.0,0,6,False
+GAS,Monaco,8,19.0,0,6,False
+GAS,Spain,9,9.0,2,8,False
+GAS,Canada,10,15.0,0,8,False
+GAS,Austria,11,13.0,0,8,False
+GAS,Silverstone,12,6.0,8,16,False
+GAS,Belgium,13,10.0,1,17,False
+GAS,Hungary,14,17.0,0,17,False
+GAS,Netherlands,15,17.0,0,17,False
+GAS,Italy,16,16.0,0,17,False
+GAS,Azerbaijan,17,18.0,0,17,False
+GAS,Singapore,18,19.0,0,17,False
+GAS,USA,19,16.0,0,17,False
+GAS,Mexico,20,15.0,0,17,False
+GAS,Brazil,21,10.0,1,18,False
+GAS,Las Vegas,22,15.0,0,18,False
+GAS,Qatar,23,16.0,0,18,False
+GAS,Abu Dhabi,24,19.0,0,18,False
+ANT,Australia,1,4.0,12,12,False
+ANT,China,2,8.0,4,16,False
+ANT,Japan,3,6.0,8,24,False
+ANT,Bahrain,4,11.0,0,24,False
+ANT,Saudi Arabia,5,6.0,8,32,False
+ANT,Miami,6,6.0,8,40,False
+ANT,Imola,7,8.0,4,44,False
+ANT,Monaco,8,18.0,0,44,False
+ANT,Spain,9,7.0,6,50,False
+ANT,Canada,10,3.0,15,65,False
+ANT,Austria,11,,0,65,False
+ANT,Silverstone,12,16.0,0,65,False
+ANT,Belgium,13,16.0,0,65,False
+ANT,Hungary,14,10.0,1,66,False
+ANT,Netherlands,15,6.0,8,74,False
+ANT,Italy,16,8.0,4,78,False
+ANT,Azerbaijan,17,4.0,12,90,False
+ANT,Singapore,18,5.0,10,100,False
+ANT,USA,19,5.0,10,110,False
+ANT,Mexico,20,6.0,8,118,False
+ANT,Brazil,21,2.0,18,136,False
+ANT,Las Vegas,22,4.0,12,148,False
+ANT,Qatar,23,5.0,10,158,False
+ANT,Abu Dhabi,24,15.0,0,158,False
+ALO,Australia,1,10.0,1,1,False
+ALO,China,2,20.0,0,1,False
+ALO,Japan,3,11.0,0,1,False
+ALO,Bahrain,4,17.0,0,1,False
+ALO,Saudi Arabia,5,12.0,0,1,False
+ALO,Miami,6,15.0,0,1,False
+ALO,Imola,7,11.0,0,1,False
+ALO,Monaco,8,6.0,8,9,False
+ALO,Spain,9,10.0,1,10,False
+ALO,Canada,10,7.0,6,16,False
+ALO,Austria,11,7.0,6,22,False
+ALO,Silverstone,12,9.0,2,24,False
+ALO,Belgium,13,17.0,0,24,False
+ALO,Hungary,14,5.0,10,34,False
+ALO,Netherlands,15,9.0,2,36,False
+ALO,Italy,16,19.0,0,36,False
+ALO,Azerbaijan,17,15.0,0,36,False
+ALO,Singapore,18,8.0,4,40,False
+ALO,USA,19,7.0,6,46,False
+ALO,Mexico,20,16.0,0,46,False
+ALO,Brazil,21,14.0,0,46,False
+ALO,Las Vegas,22,13.0,0,46,False
+ALO,Qatar,23,7.0,6,52,False
+ALO,Abu Dhabi,24,6.0,8,60,False
+LEC,Australia,1,8.0,4,4,False
+LEC,China,2,5.0,10,14,False
+LEC,Japan,3,4.0,12,26,False
+LEC,Bahrain,4,4.0,12,38,False
+LEC,Saudi Arabia,5,3.0,15,53,False
+LEC,Miami,6,7.0,6,59,False
+LEC,Imola,7,6.0,8,67,False
+LEC,Monaco,8,2.0,18,85,False
+LEC,Spain,9,3.0,15,100,False
+LEC,Canada,10,5.0,10,110,False
+LEC,Austria,11,3.0,15,125,False
+LEC,Silverstone,12,14.0,0,125,False
+LEC,Belgium,13,3.0,15,140,False
+LEC,Hungary,14,4.0,12,152,False
+LEC,Netherlands,15,5.0,10,162,False
+LEC,Italy,16,4.0,12,174,False
+LEC,Azerbaijan,17,9.0,2,176,False
+LEC,Singapore,18,6.0,8,184,False
+LEC,USA,19,8.0,4,188,False
+LEC,Mexico,20,2.0,18,206,False
+LEC,Brazil,21,3.0,15,221,False
+LEC,Las Vegas,22,6.0,8,229,False
+LEC,Qatar,23,8.0,4,233,False
+LEC,Abu Dhabi,24,4.0,12,245,False
+STR,Australia,1,6.0,8,8,False
+STR,China,2,12.0,0,8,False
+STR,Japan,3,20.0,0,8,False
+STR,Bahrain,4,18.0,0,8,False
+STR,Saudi Arabia,5,16.0,0,8,False
+STR,Miami,6,16.0,0,8,False
+STR,Imola,7,15.0,0,8,False
+STR,Monaco,8,15.0,0,8,False
+STR,Canada,10,17.0,0,8,False
+STR,Austria,11,14.0,0,8,False
+STR,Silverstone,12,7.0,6,14,False
+STR,Belgium,13,14.0,0,14,False
+STR,Hungary,14,7.0,6,20,False
+STR,Netherlands,15,8.0,4,24,False
+STR,Italy,16,18.0,0,24,False
+STR,Azerbaijan,17,17.0,0,24,False
+STR,Singapore,18,13.0,0,24,False
+STR,USA,19,17.0,0,24,False
+STR,Mexico,20,14.0,0,24,False
+STR,Brazil,21,16.0,0,24,False
+STR,Las Vegas,22,,0,24,False
+STR,Qatar,23,17.0,0,24,False
+STR,Abu Dhabi,24,9.0,2,26,False
+TSU,Australia,1,12.0,0,0,False
+TSU,China,2,19.0,0,0,False
+TSU,Japan,3,12.0,0,0,False
+TSU,Bahrain,4,9.0,2,2,False
+TSU,Saudi Arabia,5,19.0,0,2,False
+TSU,Miami,6,10.0,1,3,False
+TSU,Imola,7,10.0,1,4,False
+TSU,Monaco,8,17.0,0,4,False
+TSU,Spain,9,14.0,0,4,False
+TSU,Canada,10,12.0,0,4,False
+TSU,Austria,11,16.0,0,4,False
+TSU,Silverstone,12,15.0,0,4,False
+TSU,Belgium,13,13.0,0,4,False
+TSU,Hungary,14,18.0,0,4,False
+TSU,Netherlands,15,10.0,1,5,False
+TSU,Italy,16,13.0,0,5,False
+TSU,Azerbaijan,17,6.0,8,13,False
+TSU,Singapore,18,12.0,0,13,False
+TSU,USA,19,10.0,1,14,False
+TSU,Mexico,20,11.0,0,14,False
+TSU,Brazil,21,17.0,0,14,False
+TSU,Las Vegas,22,14.0,0,14,False
+TSU,Qatar,23,10.0,1,15,False
+TSU,Abu Dhabi,24,14.0,0,15,False
+ALB,Australia,1,5.0,10,10,False
+ALB,China,2,9.0,2,12,False
+ALB,Japan,3,9.0,2,14,False
+ALB,Bahrain,4,12.0,0,14,False
+ALB,Saudi Arabia,5,9.0,2,16,False
+ALB,Miami,6,5.0,10,26,False
+ALB,Imola,7,5.0,10,36,False
+ALB,Monaco,8,9.0,2,38,False
+ALB,Spain,9,19.0,0,38,False
+ALB,Canada,10,19.0,0,38,False
+ALB,Austria,11,16.0,0,38,False
+ALB,Silverstone,12,8.0,4,42,False
+ALB,Belgium,13,6.0,8,50,False
+ALB,Hungary,14,15.0,0,50,False
+ALB,Netherlands,15,5.0,10,60,False
+ALB,Italy,16,7.0,6,66,False
+ALB,Azerbaijan,17,12.0,0,66,False
+ALB,Singapore,18,14.0,0,66,False
+ALB,USA,19,11.0,0,66,False
+ALB,Mexico,20,12.0,0,66,False
+ALB,Brazil,21,11.0,0,66,False
+ALB,Las Vegas,22,18.0,0,66,False
+ALB,Qatar,23,11.0,0,66,False
+ALB,Abu Dhabi,24,16.0,0,66,False
+HUL,Australia,1,7.0,6,6,False
+HUL,China,2,18.0,0,6,False
+HUL,Japan,3,16.0,0,6,False
+HUL,Bahrain,4,15.0,0,6,False
+HUL,Saudi Arabia,5,15.0,0,6,False
+HUL,Miami,6,14.0,0,6,False
+HUL,Imola,7,12.0,0,6,False
+HUL,Monaco,8,16.0,0,6,False
+HUL,Spain,9,6.0,8,14,False
+HUL,Canada,10,8.0,4,18,False
+HUL,Austria,11,9.0,2,20,False
+HUL,Silverstone,12,3.0,15,35,False
+HUL,Belgium,13,12.0,0,35,False
+HUL,Hungary,14,13.0,0,35,False
+HUL,Netherlands,15,15.0,0,35,False
+HUL,Azerbaijan,17,16.0,0,35,False
+HUL,Singapore,18,20.0,0,35,False
+HUL,USA,19,10.0,1,36,False
+HUL,Mexico,20,16.0,0,36,False
+HUL,Brazil,21,9.0,2,38,False
+HUL,Las Vegas,22,9.0,2,40,False
+HUL,Qatar,23,10.0,1,41,False
+HUL,Abu Dhabi,24,11.0,0,41,False
+LAW,Australia,1,9.0,2,2,False
+LAW,China,2,16.0,0,2,False
+LAW,Japan,3,17.0,0,2,False
+LAW,Bahrain,4,13.0,0,2,False
+LAW,Saudi Arabia,5,11.0,0,2,False
+LAW,Miami,6,17.0,0,2,False
+LAW,Imola,7,14.0,0,2,False
+LAW,Monaco,8,8.0,4,6,False
+LAW,Spain,9,11.0,0,6,False
+LAW,Canada,10,19.0,0,6,False
+LAW,Austria,11,6.0,8,14,False
+LAW,Silverstone,12,,0,14,False
+LAW,Belgium,13,8.0,4,18,False
+LAW,Hungary,14,8.0,4,22,False
+LAW,Netherlands,15,13.0,0,22,False
+LAW,Italy,16,14.0,0,22,False
+LAW,Azerbaijan,17,5.0,10,32,False
+LAW,Singapore,18,15.0,0,32,False
+LAW,USA,19,9.0,2,34,False
+LAW,Mexico,20,20.0,0,34,False
+LAW,Brazil,21,7.0,6,40,False
+LAW,Las Vegas,22,16.0,0,40,False
+LAW,Qatar,23,9.0,2,42,False
+LAW,Abu Dhabi,24,18.0,0,42,False
+OCO,Australia,1,13.0,0,0,False
+OCO,China,2,7.0,6,6,False
+OCO,Japan,3,18.0,0,6,False
+OCO,Bahrain,4,8.0,4,10,False
+OCO,Saudi Arabia,5,14.0,0,10,False
+OCO,Miami,6,12.0,0,10,False
+OCO,Imola,7,19.0,0,10,False
+OCO,Monaco,8,7.0,6,16,False
+OCO,Spain,9,17.0,0,16,False
+OCO,Canada,10,9.0,2,18,False
+OCO,Austria,11,10.0,1,19,False
+OCO,Silverstone,12,13.0,0,19,False
+OCO,Belgium,13,15.0,0,19,False
+OCO,Hungary,14,16.0,0,19,False
+OCO,Netherlands,15,11.0,0,19,False
+OCO,Italy,16,15.0,0,19,False
+OCO,Azerbaijan,17,14.0,0,19,False
+OCO,Singapore,18,18.0,0,19,False
+OCO,USA,19,15.0,0,19,False
+OCO,Mexico,20,9.0,2,21,False
+OCO,Brazil,21,12.0,0,21,False
+OCO,Las Vegas,22,11.0,0,21,False
+OCO,Qatar,23,15.0,0,21,False
+OCO,Abu Dhabi,24,7.0,6,27,False
+NOR,Australia,1,1.0,25,25,False
+NOR,China,2,2.0,18,43,False
+NOR,Japan,3,2.0,18,61,False
+NOR,Bahrain,4,3.0,15,76,False
+NOR,Saudi Arabia,5,4.0,12,88,False
+NOR,Miami,6,2.0,18,106,False
+NOR,Imola,7,2.0,18,124,False
+NOR,Monaco,8,1.0,25,149,False
+NOR,Spain,9,2.0,18,167,False
+NOR,Canada,10,5.0,10,177,False
+NOR,Austria,11,1.0,25,202,False
+NOR,Silverstone,12,1.0,25,227,False
+NOR,Belgium,13,2.0,18,245,False
+NOR,Hungary,14,1.0,25,270,False
+NOR,Netherlands,15,2.0,18,288,False
+NOR,Italy,16,2.0,18,306,False
+NOR,Azerbaijan,17,7.0,6,312,False
+NOR,Singapore,18,3.0,15,327,False
+NOR,USA,19,4.0,12,339,False
+NOR,Mexico,20,1.0,25,364,False
+NOR,Brazil,21,1.0,25,389,False
+NOR,Las Vegas,22,2.0,18,407,False
+NOR,Qatar,23,4.0,12,419,False
+NOR,Abu Dhabi,24,3.0,15,434,False
+HAM,Australia,1,10.0,1,1,False
+HAM,China,2,6.0,8,9,False
+HAM,Japan,3,7.0,6,15,False
+HAM,Bahrain,4,5.0,10,25,False
+HAM,Saudi Arabia,5,7.0,6,31,False
+HAM,Miami,6,8.0,4,35,False
+HAM,Imola,7,4.0,12,47,False
+HAM,Monaco,8,5.0,10,57,False
+HAM,Spain,9,7.0,6,63,False
+HAM,Canada,10,6.0,8,71,False
+HAM,Austria,11,4.0,12,83,False
+HAM,Silverstone,12,4.0,12,95,False
+HAM,Belgium,13,7.0,6,101,False
+HAM,Hungary,14,12.0,0,101,False
+HAM,Netherlands,15,7.0,6,107,False
+HAM,Italy,16,6.0,8,115,False
+HAM,Azerbaijan,17,8.0,4,119,False
+HAM,Singapore,18,7.0,6,125,False
+HAM,USA,19,12.0,0,125,False
+HAM,Mexico,20,8.0,4,129,False
+HAM,Brazil,21,18.0,0,129,False
+HAM,Las Vegas,22,10.0,1,130,False
+HAM,Qatar,23,12.0,0,130,False
+HAM,Abu Dhabi,24,8.0,4,134,False
+BOR,Australia,1,13.0,0,0,False
+BOR,China,2,17.0,0,0,False
+BOR,Japan,3,19.0,0,0,False
+BOR,Bahrain,4,19.0,0,0,False
+BOR,Saudi Arabia,5,18.0,0,0,False
+BOR,Miami,6,17.0,0,0,False
+BOR,Imola,7,18.0,0,0,False
+BOR,Monaco,8,14.0,0,0,False
+BOR,Spain,9,12.0,0,0,False
+BOR,Canada,10,14.0,0,0,False
+BOR,Austria,11,8.0,4,4,False
+BOR,Silverstone,12,17.0,0,4,False
+BOR,Belgium,13,9.0,2,6,False
+BOR,Hungary,14,6.0,8,14,False
+BOR,Netherlands,15,16.0,0,14,False
+BOR,Italy,16,9.0,2,16,False
+BOR,Azerbaijan,17,11.0,0,16,False
+BOR,Singapore,18,17.0,0,16,False
+BOR,USA,19,13.0,0,16,False
+BOR,Mexico,20,10.0,1,17,False
+BOR,Brazil,21,,0,17,False
+BOR,Las Vegas,22,19.0,0,17,False
+BOR,Qatar,23,13.0,0,17,False
+BOR,Abu Dhabi,24,12.0,0,17,False
+SAI,Australia,1,,0,0,False
+SAI,China,2,13.0,0,0,False
+SAI,Japan,3,14.0,0,0,False
+SAI,Bahrain,4,20.0,0,0,False
+SAI,Saudi Arabia,5,8.0,4,4,False
+SAI,Miami,6,9.0,2,6,False
+SAI,Imola,7,8.0,4,10,False
+SAI,Monaco,8,10.0,1,11,False
+SAI,Spain,9,15.0,0,11,False
+SAI,Canada,10,10.0,1,12,False
+SAI,Silverstone,12,12.0,0,12,False
+SAI,Belgium,13,18.0,0,12,False
+SAI,Hungary,14,14.0,0,12,False
+SAI,Netherlands,15,14.0,0,12,False
+SAI,Italy,16,11.0,0,12,False
+SAI,Azerbaijan,17,3.0,15,27,False
+SAI,Singapore,18,10.0,1,28,False
+SAI,USA,19,3.0,15,43,False
+SAI,Mexico,20,15.0,0,43,False
+SAI,Brazil,21,13.0,0,43,False
+SAI,Las Vegas,22,7.0,6,49,False
+SAI,Qatar,23,3.0,15,64,False
+SAI,Abu Dhabi,24,13.0,0,64,False
+HAD,Australia,1,,0,0,False
+HAD,China,2,15.0,0,0,False
+HAD,Japan,3,8.0,4,4,False
+HAD,Bahrain,4,16.0,0,4,False
+HAD,Saudi Arabia,5,10.0,1,5,False
+HAD,Miami,6,11.0,0,5,False
+HAD,Imola,7,9.0,2,7,False
+HAD,Monaco,8,6.0,8,15,False
+HAD,Spain,9,8.0,4,19,False
+HAD,Canada,10,16.0,0,19,False
+HAD,Austria,11,12.0,0,19,False
+HAD,Silverstone,12,16.0,0,19,False
+HAD,Belgium,13,20.0,0,19,False
+HAD,Hungary,14,11.0,0,19,False
+HAD,Netherlands,15,3.0,15,34,False
+HAD,Italy,16,10.0,1,35,False
+HAD,Azerbaijan,17,10.0,1,36,False
+HAD,Singapore,18,11.0,0,36,False
+HAD,USA,19,18.0,0,36,False
+HAD,Mexico,20,13.0,0,36,False
+HAD,Brazil,21,8.0,4,40,False
+HAD,Las Vegas,22,8.0,4,44,False
+HAD,Qatar,23,18.0,0,44,False
+HAD,Abu Dhabi,24,17.0,0,44,False
+RUS,Australia,1,3.0,15,15,False
+RUS,China,2,3.0,15,30,False
+RUS,Japan,3,5.0,10,40,False
+RUS,Bahrain,4,2.0,18,58,False
+RUS,Saudi Arabia,5,5.0,10,68,False
+RUS,Miami,6,3.0,15,83,False
+RUS,Imola,7,7.0,6,89,False
+RUS,Monaco,8,11.0,0,89,False
+RUS,Spain,9,4.0,12,101,False
+RUS,Canada,10,1.0,25,126,False
+RUS,Austria,11,5.0,10,136,False
+RUS,Silverstone,12,10.0,1,137,False
+RUS,Belgium,13,5.0,10,147,False
+RUS,Hungary,14,3.0,15,162,False
+RUS,Netherlands,15,4.0,12,174,False
+RUS,Italy,16,5.0,10,184,False
+RUS,Azerbaijan,17,2.0,18,202,False
+RUS,Singapore,18,1.0,25,227,False
+RUS,USA,19,6.0,8,235,False
+RUS,Mexico,20,7.0,6,241,False
+RUS,Brazil,21,4.0,12,253,False
+RUS,Las Vegas,22,3.0,15,268,False
+RUS,Qatar,23,6.0,8,276,False
+RUS,Abu Dhabi,24,5.0,10,286,False
+DOO,Australia,1,,0,0,False
+DOO,China,2,14.0,0,0,False
+DOO,Japan,3,15.0,0,0,False
+DOO,Bahrain,4,14.0,0,0,False
+DOO,Saudi Arabia,5,17.0,0,0,False
+DOO,Miami,6,,0,0,False
+PIA,Australia,1,9.0,2,2,False
+PIA,China,2,1.0,25,27,False
+PIA,Japan,3,3.0,15,42,False
+PIA,Bahrain,4,1.0,25,67,False
+PIA,Saudi Arabia,5,1.0,25,92,False
+PIA,Miami,6,1.0,25,117,False
+PIA,Imola,7,3.0,15,132,False
+PIA,Monaco,8,3.0,15,147,False
+PIA,Spain,9,1.0,25,172,False
+PIA,Canada,10,4.0,12,184,False
+PIA,Austria,11,2.0,18,202,False
+PIA,Silverstone,12,2.0,18,220,False
+PIA,Belgium,13,1.0,25,245,False
+PIA,Hungary,14,2.0,18,263,False
+PIA,Netherlands,15,1.0,25,288,False
+PIA,Italy,16,3.0,15,303,False
+PIA,Azerbaijan,17,10.0,1,304,False
+PIA,Singapore,18,4.0,12,316,False
+PIA,USA,19,2.0,18,334,False
+PIA,Mexico,20,5.0,10,344,False
+PIA,Brazil,21,5.0,10,354,False
+PIA,Las Vegas,22,5.0,10,364,False
+PIA,Qatar,23,2.0,18,382,False
+PIA,Abu Dhabi,24,2.0,18,400,False
+BEA,Australia,1,14.0,0,0,False
+BEA,China,2,10.0,1,1,False
+BEA,Japan,3,10.0,1,2,False
+BEA,Bahrain,4,10.0,1,3,False
+BEA,Saudi Arabia,5,13.0,0,3,False
+BEA,Miami,6,13.0,0,3,False
+BEA,Imola,7,17.0,0,3,False
+BEA,Monaco,8,12.0,0,3,False
+BEA,Spain,9,13.0,0,3,False
+BEA,Canada,10,11.0,0,3,False
+BEA,Austria,11,11.0,0,3,False
+BEA,Silverstone,12,11.0,0,3,False
+BEA,Belgium,13,11.0,0,3,False
+BEA,Hungary,14,19.0,0,3,False
+BEA,Netherlands,15,7.0,6,9,False
+BEA,Italy,16,12.0,0,9,False
+BEA,Azerbaijan,17,12.0,0,9,False
+BEA,Singapore,18,9.0,2,11,False
+BEA,USA,19,19.0,0,11,False
+BEA,Mexico,20,4.0,12,23,False
+BEA,Brazil,21,6.0,8,31,False
+BEA,Las Vegas,22,12.0,0,31,False
+BEA,Qatar,23,19.0,0,31,False
+BEA,Abu Dhabi,24,10.0,1,32,False
+COL,Imola,7,16.0,0,0,False
+COL,Monaco,8,13.0,0,0,False
+COL,Spain,9,16.0,0,0,False
+COL,Canada,10,13.0,0,0,False
+COL,Austria,11,15.0,0,0,False
+COL,Belgium,13,19.0,0,0,False
+COL,Hungary,14,19.0,0,0,False
+COL,Netherlands,15,12.0,0,0,False
+COL,Italy,16,17.0,0,0,False
+COL,Azerbaijan,17,19.0,0,0,False
+COL,Singapore,18,16.0,0,0,False
+COL,USA,19,14.0,0,0,False
+COL,Mexico,20,16.0,0,0,False
+COL,Brazil,21,15.0,0,0,False
+COL,Las Vegas,22,17.0,0,0,False
+COL,Qatar,23,14.0,0,0,False
+COL,Abu Dhabi,24,20.0,0,0,False

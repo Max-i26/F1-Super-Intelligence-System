@@ -1,0 +1,11 @@
+team,avg_pit_stops_per_race,total_driver_starts,one_stop_pct,multi_stop_pct
+Racing Bulls,1.58,48,50.0,45.8
+Sauber,1.68,47,40.4,48.9
+Alpine,1.7,47,38.3,55.3
+McLaren,1.77,48,41.7,56.2
+Haas,1.77,48,50.0,47.9
+Williams,1.79,47,40.4,57.4
+Aston Martin,1.79,47,44.7,51.1
+Ferrari,1.83,48,39.6,56.2
+Mercedes,1.85,48,43.8,54.2
+Red Bull,1.85,48,41.7,54.2

@@ -1,0 +1,241 @@
+race,race_round,team,rep_pace,grid_median_pace,pace_delta_to_median,total_team_laps
+Australia,1,Alpine,103.576,93.499,10.076,54
+China,2,Alpine,98.14,97.807,0.333,112
+Japan,3,Alpine,93.607,93.367,0.24,106
+Bahrain,4,Alpine,98.426,98.593,-0.167,114
+Saudi Arabia,5,Alpine,95.635,94.466,1.169,47
+Miami,6,Alpine,92.593,92.64,-0.047,57
+Imola,7,Alpine,81.892,81.96,-0.068,126
+Monaco,8,Alpine,78.374,77.684,0.69,83
+Spain,9,Alpine,82.019,81.454,0.565,132
+Canada,10,Alpine,77.403,77.011,0.391,138
+Austria,11,Alpine,71.137,70.848,0.289,138
+Silverstone,12,Alpine,103.628,104.374,-0.746,47
+Belgium,13,Alpine,110.805,107.927,2.878,82
+Hungary,14,Alpine,82.847,82.407,0.44,138
+Netherlands,15,Alpine,76.638,76.471,0.167,142
+Italy,16,Alpine,84.183,83.672,0.51,104
+Azerbaijan,17,Alpine,107.208,106.351,0.857,100
+Singapore,18,Alpine,98.662,98.082,0.58,122
+USA,19,Alpine,87.042,86.907,0.135,112
+Mexico,20,Alpine,83.814,82.874,0.94,140
+Brazil,21,Alpine,74.998,75.008,-0.01,142
+Las Vegas,22,Alpine,97.056,96.393,0.663,99
+Qatar,23,Alpine,87.042,86.907,0.135,112
+Abu Dhabi,24,Alpine,89.851,89.73,0.122,114
+Australia,1,Aston Martin,100.874,93.499,7.374,83
+China,2,Aston Martin,98.267,97.807,0.46,60
+Japan,3,Aston Martin,93.608,93.367,0.241,105
+Bahrain,4,Aston Martin,99.15,98.593,0.557,112
+Saudi Arabia,5,Aston Martin,95.078,94.466,0.612,95
+Miami,6,Aston Martin,92.875,92.64,0.235,112
+Imola,7,Aston Martin,82.05,81.96,0.09,126
+Monaco,8,Aston Martin,78.25,77.684,0.566,112
+Spain,9,Aston Martin,81.406,81.454,-0.048,66
+Canada,10,Aston Martin,76.817,77.011,-0.195,139
+Austria,11,Aston Martin,71.077,70.848,0.229,138
+Silverstone,12,Aston Martin,103.945,104.374,-0.429,93
+Belgium,13,Aston Martin,111.17,107.927,3.243,82
+Hungary,14,Aston Martin,82.226,82.407,-0.181,140
+Netherlands,15,Aston Martin,76.381,76.471,-0.09,142
+Italy,16,Aston Martin,84.128,83.672,0.455,76
+Azerbaijan,17,Aston Martin,106.769,106.351,0.418,102
+Singapore,18,Aston Martin,98.064,98.082,-0.018,123
+USA,19,Aston Martin,86.701,86.907,-0.206,112
+Mexico,20,Aston Martin,83.116,82.874,0.242,104
+Brazil,21,Aston Martin,74.95,75.008,-0.058,142
+Las Vegas,22,Aston Martin,96.932,96.393,0.539,50
+Qatar,23,Aston Martin,86.701,86.907,-0.206,112
+Abu Dhabi,24,Aston Martin,89.833,89.73,0.103,116
+Australia,1,Ferrari,102.44,93.499,8.941,106
+China,2,Ferrari,97.211,97.807,-0.596,112
+Japan,3,Ferrari,92.873,93.367,-0.494,106
+Bahrain,4,Ferrari,97.868,98.593,-0.725,112
+Saudi Arabia,5,Ferrari,93.725,94.466,-0.741,96
+Miami,6,Ferrari,92.019,92.64,-0.621,114
+Imola,7,Ferrari,81.133,81.96,-0.827,126
+Monaco,8,Ferrari,75.841,77.684,-1.843,156
+Spain,9,Ferrari,80.444,81.454,-1.01,132
+Canada,10,Ferrari,76.057,77.011,-0.955,140
+Austria,11,Ferrari,70.067,70.848,-0.781,140
+Silverstone,12,Ferrari,106.953,104.374,2.58,94
+Belgium,13,Ferrari,107.062,107.927,-0.865,82
+Hungary,14,Ferrari,82.127,82.407,-0.28,139
+Netherlands,15,Ferrari,75.9,76.471,-0.571,72
+Italy,16,Ferrari,83.16,83.672,-0.512,106
+Azerbaijan,17,Ferrari,105.793,106.351,-0.558,102
+Singapore,18,Ferrari,97.085,98.082,-0.997,124
+USA,19,Ferrari,86.686,86.907,-0.221,114
+Mexico,20,Ferrari,82.379,82.874,-0.495,142
+Brazil,21,Ferrari,83.336,75.008,8.328,42
+Las Vegas,22,Ferrari,95.968,96.393,-0.425,100
+Qatar,23,Ferrari,86.686,86.907,-0.221,114
+Abu Dhabi,24,Ferrari,89.092,89.73,-0.637,116
+Australia,1,Haas,102.263,93.499,8.764,106
+China,2,Haas,97.885,97.807,0.078,112
+Japan,3,Haas,93.647,93.367,0.28,106
+Bahrain,4,Haas,98.529,98.593,-0.064,114
+Saudi Arabia,5,Haas,95.197,94.466,0.731,96
+Miami,6,Haas,92.761,92.64,0.121,84
+Imola,7,Haas,81.91,81.96,-0.05,90
+Monaco,8,Haas,77.811,77.684,0.127,153
+Spain,9,Haas,81.808,81.454,0.354,132
+Canada,10,Haas,77.164,77.011,0.152,138
+Austria,11,Haas,70.952,70.848,0.104,138
+Silverstone,12,Haas,107.273,104.374,2.9,94
+Belgium,13,Haas,111.34,107.927,3.413,82
+Hungary,14,Haas,83.212,82.407,0.805,117
+Netherlands,15,Haas,76.586,76.471,0.115,142
+Italy,16,Haas,83.775,83.672,0.102,105
+Azerbaijan,17,Haas,106.638,106.351,0.287,102
+Singapore,18,Haas,98.442,98.082,0.36,123
+USA,19,Haas,87.246,86.907,0.339,96
+Mexico,20,Haas,82.709,82.874,-0.165,142
+Brazil,21,Haas,74.704,75.008,-0.304,142
+Las Vegas,22,Haas,96.469,96.393,0.076,100
+Qatar,23,Haas,87.246,86.907,0.339,96
+Abu Dhabi,24,Haas,89.828,89.73,0.099,116
+Australia,1,McLaren,101.356,93.499,7.856,105
+China,2,McLaren,97.023,97.807,-0.784,112
+Japan,3,McLaren,92.522,93.367,-0.845,106
+Bahrain,4,McLaren,97.441,98.593,-1.152,112
+Saudi Arabia,5,McLaren,93.312,94.466,-1.154,96
+Miami,6,McLaren,91.131,92.64,-1.509,114
+Imola,7,McLaren,80.59,81.96,-1.37,126
+Monaco,8,McLaren,75.494,77.684,-2.19,156
+Spain,9,McLaren,80.033,81.454,-1.421,132
+Canada,10,McLaren,75.634,77.011,-1.377,136
+Austria,11,McLaren,69.72,70.848,-1.128,140
+Silverstone,12,McLaren,100.987,104.374,-3.387,92
+Belgium,13,McLaren,109.575,107.927,1.648,82
+Hungary,14,McLaren,81.192,82.407,-1.215,140
+Netherlands,15,McLaren,74.609,76.471,-1.862,134
+Italy,16,McLaren,82.927,83.672,-0.746,106
+Azerbaijan,17,McLaren,105.76,106.351,-0.591,51
+Singapore,18,McLaren,96.656,98.082,-1.426,124
+USA,19,McLaren,85.2,86.907,-1.707,114
+Mexico,20,McLaren,82.192,82.874,-0.682,142
+Brazil,21,McLaren,74.229,75.008,-0.779,142
+Las Vegas,22,McLaren,95.726,96.393,-0.666,100
+Qatar,23,McLaren,85.2,86.907,-1.707,114
+Abu Dhabi,24,McLaren,88.759,89.73,-0.971,116
+Australia,1,Mercedes,102.78,93.499,9.28,107
+China,2,Mercedes,97.499,97.807,-0.308,112
+Japan,3,Mercedes,92.805,93.367,-0.562,106
+Bahrain,4,Mercedes,98.07,98.593,-0.523,112
+Saudi Arabia,5,Mercedes,93.869,94.466,-0.597,96
+Miami,6,Mercedes,91.904,92.64,-0.736,114
+Imola,7,Mercedes,81.549,81.96,-0.411,107
+Monaco,8,Mercedes,78.543,77.684,0.859,151
+Spain,9,Mercedes,80.804,81.454,-0.65,119
+Canada,10,Mercedes,75.569,77.011,-1.442,140
+Austria,11,Mercedes,70.625,70.848,-0.223,70
+Silverstone,12,Mercedes,110.865,104.374,6.492,64
+Belgium,13,Mercedes,110.886,107.927,2.959,82
+Hungary,14,Mercedes,81.98,82.407,-0.427,139
+Netherlands,15,Mercedes,75.624,76.471,-0.847,142
+Italy,16,Mercedes,83.344,83.672,-0.328,106
+Azerbaijan,17,Mercedes,105.468,106.351,-0.883,102
+Singapore,18,Mercedes,96.817,98.082,-1.265,124
+USA,19,Mercedes,86.123,86.907,-0.784,114
+Mexico,20,Mercedes,82.444,82.874,-0.43,142
+Brazil,21,Mercedes,74.378,75.008,-0.63,142
+Las Vegas,22,Mercedes,95.716,96.393,-0.677,100
+Qatar,23,Mercedes,86.123,86.907,-0.784,114
+Abu Dhabi,24,Mercedes,89.706,89.73,-0.023,116
+Australia,1,Racing Bulls,102.684,93.499,9.184,53
+China,2,Racing Bulls,97.964,97.807,0.157,111
+Japan,3,Racing Bulls,93.532,93.367,0.165,106
+Bahrain,4,Racing Bulls,98.881,98.593,0.288,113
+Saudi Arabia,5,Racing Bulls,94.639,94.466,0.173,96
+Miami,6,Racing Bulls,92.975,92.64,0.335,93
+Imola,7,Racing Bulls,81.679,81.96,-0.281,126
+Monaco,8,Racing Bulls,77.453,77.684,-0.231,154
+Spain,9,Racing Bulls,81.444,81.454,-0.01,132
+Canada,10,Racing Bulls,77.538,77.011,0.527,122
+Austria,11,Racing Bulls,71.152,70.848,0.304,139
+Silverstone,12,Racing Bulls,122.241,104.374,17.867,15
+Belgium,13,Racing Bulls,111.676,107.927,3.749,81
+Hungary,14,Racing Bulls,82.442,82.407,0.035,139
+Netherlands,15,Racing Bulls,75.588,76.471,-0.883,142
+Italy,16,Racing Bulls,83.797,83.672,0.124,106
+Azerbaijan,17,Racing Bulls,105.826,106.351,-0.525,102
+Singapore,18,Racing Bulls,98.461,98.082,0.379,122
+USA,19,Racing Bulls,86.514,86.907,-0.393,111
+Mexico,20,Racing Bulls,83.306,82.874,0.432,75
+Brazil,21,Racing Bulls,75.122,75.008,0.114,142
+Las Vegas,22,Racing Bulls,96.331,96.393,-0.061,99
+Qatar,23,Racing Bulls,86.514,86.907,-0.393,111
+Abu Dhabi,24,Racing Bulls,90.065,89.73,0.335,114
+Australia,1,Red Bull,101.269,93.499,7.77,95
+China,2,Red Bull,97.558,97.807,-0.249,112
+Japan,3,Red Bull,92.966,93.367,-0.401,106
+Bahrain,4,Red Bull,98.408,98.593,-0.185,113
+Saudi Arabia,5,Red Bull,93.21,94.466,-1.256,49
+Miami,6,Red Bull,91.983,92.64,-0.657,114
+Imola,7,Red Bull,81.182,81.96,-0.778,126
+Monaco,8,Red Bull,77.286,77.684,-0.398,154
+Spain,9,Red Bull,80.648,81.454,-0.806,132
+Canada,10,Red Bull,76.49,77.011,-0.521,139
+Austria,11,Red Bull,71.121,70.848,0.273,68
+Silverstone,12,Red Bull,106.313,104.374,1.939,92
+Belgium,13,Red Bull,110.634,107.927,2.707,82
+Hungary,14,Red Bull,82.458,82.407,0.051,139
+Netherlands,15,Red Bull,75.804,76.471,-0.667,142
+Italy,16,Red Bull,83.326,83.672,-0.346,106
+Azerbaijan,17,Red Bull,105.496,106.351,-0.855,102
+Singapore,18,Red Bull,97.477,98.082,-0.605,123
+USA,19,Red Bull,85.963,86.907,-0.944,114
+Mexico,20,Red Bull,82.718,82.874,-0.156,142
+Brazil,21,Red Bull,74.524,75.008,-0.484,142
+Las Vegas,22,Red Bull,95.891,96.393,-0.502,100
+Qatar,23,Red Bull,85.963,86.907,-0.944,114
+Abu Dhabi,24,Red Bull,89.326,89.73,-0.403,116
+Australia,1,Sauber,102.622,93.499,9.123,95
+China,2,Sauber,98.525,97.807,0.718,110
+Japan,3,Sauber,93.844,93.367,0.477,106
+Bahrain,4,Sauber,99.131,98.593,0.538,113
+Saudi Arabia,5,Sauber,95.674,94.466,1.208,94
+Miami,6,Sauber,92.813,92.64,0.173,86
+Imola,7,Sauber,81.951,81.96,-0.009,126
+Monaco,8,Sauber,78.32,77.684,0.636,152
+Spain,9,Sauber,81.667,81.454,0.213,132
+Canada,10,Sauber,77.142,77.011,0.13,139
+Austria,11,Sauber,70.73,70.848,-0.118,138
+Silverstone,12,Sauber,107.495,104.374,3.121,49
+Belgium,13,Sauber,111.012,107.927,3.085,82
+Hungary,14,Sauber,82.354,82.407,-0.053,139
+Netherlands,15,Sauber,76.757,76.471,0.286,142
+Italy,16,Sauber,83.56,83.672,-0.113,53
+Azerbaijan,17,Sauber,106.574,106.351,0.223,102
+Singapore,18,Sauber,98.46,98.082,0.378,122
+USA,19,Sauber,87.175,86.907,0.268,63
+Mexico,20,Sauber,83.471,82.874,0.597,96
+Brazil,21,Sauber,75.312,75.008,0.304,71
+Las Vegas,22,Sauber,96.145,96.393,-0.248,51
+Qatar,23,Sauber,87.175,86.907,0.268,63
+Abu Dhabi,24,Sauber,89.863,89.73,0.134,116
+Australia,1,Williams,103.265,93.499,9.766,54
+China,2,Williams,97.984,97.807,0.177,112
+Japan,3,Williams,93.478,93.367,0.111,106
+Bahrain,4,Williams,98.91,98.593,0.317,100
+Saudi Arabia,5,Williams,94.519,94.466,0.053,96
+Miami,6,Williams,91.967,92.64,-0.673,114
+Imola,7,Williams,81.375,81.96,-0.585,126
+Monaco,8,Williams,77.95,77.684,0.266,152
+Spain,9,Williams,81.723,81.454,0.269,93
+Canada,10,Williams,77.294,77.011,0.283,115
+Austria,11,Williams,78.46,70.848,7.612,15
+Silverstone,12,Williams,104.214,104.374,-0.159,94
+Belgium,13,Williams,111.0,107.927,3.073,82
+Hungary,14,Williams,82.737,82.407,0.33,138
+Netherlands,15,Williams,75.896,76.471,-0.575,142
+Italy,16,Williams,83.567,83.672,-0.105,106
+Azerbaijan,17,Williams,105.835,106.351,-0.516,102
+Singapore,18,Williams,98.335,98.082,0.253,122
+USA,19,Williams,86.243,86.907,-0.664,114
+Mexico,20,Williams,82.979,82.874,0.105,137
+Brazil,21,Williams,75.05,75.008,0.042,142
+Las Vegas,22,Williams,96.204,96.393,-0.188,85
+Qatar,23,Williams,86.243,86.907,-0.664,114
+Abu Dhabi,24,Williams,89.827,89.73,0.097,116
