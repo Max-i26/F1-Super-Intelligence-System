@@ -159,7 +159,94 @@ The platform delivers 10 specialized intelligence modules accessible via the sid
 
 ## 🏛️ System Architecture
 
-`
+```mermaid
+flowchart TD
+    %% Custom Styling Palette
+    classDef dataSource fill:#141414,stroke:#44AAFF,stroke-width:2px,color:#FFFFFF;
+    classDef etlLayer fill:#181818,stroke:#D4AF37,stroke-width:2px,color:#FFFFFF;
+    classDef engineCore fill:#1E1E1E,stroke:#F5D060,stroke-width:2px,color:#FFFFFF;
+    classDef cacheLayer fill:#121212,stroke:#39B54A,stroke-width:2px,color:#FFFFFF;
+    classDef uiLayer fill:#181818,stroke:#D4AF37,stroke-width:3px,color:#FFFFFF;
+    classDef userLayer fill:#242424,stroke:#E8002D,stroke-width:2px,color:#FFFFFF;
+
+    subgraph SG_DATA["1. Data Acquisition and External Feeds"]
+        D_RAW["season_laps.csv (24 Rounds, 26,689 Laps)"]:::dataSource
+        D_API["OpenF1 REST API (Live Telemetry and Weather)"]:::dataSource
+        D_FIA["FIA Official Archive (Ground Truth Standings)"]:::dataSource
+    end
+
+    subgraph SG_ETL["2. ETL, Normalization and Quality Auditing"]
+        E_LOAD["Local Ingestion Loader (src/data/local.py)"]:::etlLayer
+        E_NORM["Data Normalizer (src/data/normalization.py)"]:::etlLayer
+        E_AUDIT["10-Point Validation Engine (src/data/validation.py)"]:::etlLayer
+    end
+
+    subgraph SG_ENGINES["3. Analytical Intelligence Engines (src/intelligence/)"]
+        direction TB
+        M_CHAMP["Championship Truth Engine (championship.py)"]:::engineCore
+        M_RACE["Race Pace and Debrief Generator (race.py)"]:::engineCore
+        M_DRIVER["Driver DNA 5-Axis Radar (driver.py)"]:::engineCore
+        M_TYRE["Tyre Stints and Cliff Detector (tyres.py)"]:::engineCore
+        M_STRAT["Tactical Undercut Simulator (strategy.py)"]:::engineCore
+        M_TELEM["Telemetry Workbench (telemetry.py)"]:::engineCore
+        M_ANOM["Pace Anomaly Engine (anomalies.py)"]:::engineCore
+        M_TEAM["Constructor Trajectory and Pits (teams.py)"]:::engineCore
+        M_SIM["Monte Carlo 1,000 Runs (simulation.py)"]:::engineCore
+    end
+
+    subgraph SG_CACHE["4. Precomputed High-Throughput Cache Layer"]
+        C_STORE["data/2025/intelligence/*.csv (10 Precomputed Analytics)"]:::cacheLayer
+    end
+
+    subgraph SG_UI["5. Presentation Layer (Streamlit and Plotly)"]
+        U_ROUTER["Main Controller and Router (app.py)"]:::uiLayer
+        U_PAGES["10 Modular Dashboards (src/ui/pages.py)"]:::uiLayer
+        U_THEME["Theme Tokens and Components (theme.py, components.py)"]:::uiLayer
+        U_CHARTS["Vector Visualizations Library (src/ui/charts.py)"]:::uiLayer
+    end
+
+    subgraph SG_USERS["6. Decision Makers and Race Operations"]
+        OP_USERS["Race Strategists · Performance Engineers · Team Principals"]:::userLayer
+    end
+
+    %% Pipeline Connections
+    D_RAW --> E_LOAD
+    D_API -.->|"On-Demand Live Polling"| E_NORM
+    D_FIA --> E_NORM
+    E_LOAD --> E_NORM
+    E_NORM --> E_AUDIT
+
+    E_AUDIT --> M_CHAMP
+    E_AUDIT --> M_RACE
+    E_AUDIT --> M_DRIVER
+    E_AUDIT --> M_TYRE
+    E_AUDIT --> M_STRAT
+    E_AUDIT --> M_TELEM
+    E_AUDIT --> M_ANOM
+    E_AUDIT --> M_TEAM
+    E_AUDIT --> M_SIM
+
+    M_CHAMP --> C_STORE
+    M_RACE --> C_STORE
+    M_DRIVER --> C_STORE
+    M_TYRE --> C_STORE
+    M_STRAT --> C_STORE
+    M_TELEM --> C_STORE
+    M_ANOM --> C_STORE
+    M_TEAM --> C_STORE
+    M_SIM --> C_STORE
+
+    C_STORE --> U_ROUTER
+    U_ROUTER --> U_PAGES
+    U_PAGES --> U_THEME
+    U_PAGES --> U_CHARTS
+    U_CHARTS --> OP_USERS
+    OP_USERS -.->|"Adjust Gap, Delta and Simulation Parameters"| U_ROUTER
+```
+
+### 📁 Repository Structure
+
+```text
 F1-Super-Intelligence-Platform/
 ├── app.py                             # Streamlit multi-page application entrypoint
 ├── config.py                          # Master configuration & design token constants

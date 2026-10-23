@@ -31,41 +31,183 @@ This document breaks down every single page, feature, algorithm, statistical mod
 
 # 1. System Foundation & Data Architecture
 
+```mermaid
+flowchart TD
+    %% Custom Styling Palette
+    classDef dataSource fill:#141414,stroke:#44AAFF,stroke-width:2px,color:#FFFFFF;
+    classDef etlLayer fill:#181818,stroke:#D4AF37,stroke-width:2px,color:#FFFFFF;
+    classDef engineCore fill:#1E1E1E,stroke:#F5D060,stroke-width:2px,color:#FFFFFF;
+    classDef cacheLayer fill:#121212,stroke:#39B54A,stroke-width:2px,color:#FFFFFF;
+    classDef uiLayer fill:#181818,stroke:#D4AF37,stroke-width:3px,color:#FFFFFF;
+    classDef userLayer fill:#242424,stroke:#E8002D,stroke-width:2px,color:#FFFFFF;
+
+    subgraph SG_DATA["1. Data Acquisition and External Feeds"]
+        D_RAW["season_laps.csv (24 Rounds, 26,689 Laps)"]:::dataSource
+        D_API["OpenF1 REST API (Live Telemetry and Weather)"]:::dataSource
+        D_FIA["FIA Official Archive (Ground Truth Standings)"]:::dataSource
+    end
+
+    subgraph SG_ETL["2. ETL, Normalization and Quality Auditing"]
+        E_LOAD["Local Ingestion Loader (src/data/local.py)"]:::etlLayer
+        E_NORM["Data Normalizer (src/data/normalization.py)"]:::etlLayer
+        E_AUDIT["10-Point Validation Engine (src/data/validation.py)"]:::etlLayer
+    end
+
+    subgraph SG_ENGINES["3. Analytical Intelligence Engines (src/intelligence/)"]
+        direction TB
+        M_CHAMP["Championship Truth Engine (championship.py)"]:::engineCore
+        M_RACE["Race Pace and Debrief Generator (race.py)"]:::engineCore
+        M_DRIVER["Driver DNA 5-Axis Radar (driver.py)"]:::engineCore
+        M_TYRE["Tyre Stints and Cliff Detector (tyres.py)"]:::engineCore
+        M_STRAT["Tactical Undercut Simulator (strategy.py)"]:::engineCore
+        M_TELEM["Telemetry Workbench (telemetry.py)"]:::engineCore
+        M_ANOM["Pace Anomaly Engine (anomalies.py)"]:::engineCore
+        M_TEAM["Constructor Trajectory and Pits (teams.py)"]:::engineCore
+        M_SIM["Monte Carlo 1,000 Runs (simulation.py)"]:::engineCore
+    end
+
+    subgraph SG_CACHE["4. Precomputed High-Throughput Cache Layer"]
+        C_STORE["data/2025/intelligence/*.csv (10 Precomputed Analytics)"]:::cacheLayer
+    end
+
+    subgraph SG_UI["5. Presentation Layer (Streamlit and Plotly)"]
+        U_ROUTER["Main Controller and Router (app.py)"]:::uiLayer
+        U_PAGES["10 Modular Dashboards (src/ui/pages.py)"]:::uiLayer
+        U_THEME["Theme Tokens and Components (theme.py, components.py)"]:::uiLayer
+        U_CHARTS["Vector Visualizations Library (src/ui/charts.py)"]:::uiLayer
+    end
+
+    subgraph SG_USERS["6. Decision Makers and Race Operations"]
+        OP_USERS["Race Strategists · Performance Engineers · Team Principals"]:::userLayer
+    end
+
+    %% Pipeline Connections
+    D_RAW --> E_LOAD
+    D_API -.->|"On-Demand Live Polling"| E_NORM
+    D_FIA --> E_NORM
+    E_LOAD --> E_NORM
+    E_NORM --> E_AUDIT
+
+    E_AUDIT --> M_CHAMP
+    E_AUDIT --> M_RACE
+    E_AUDIT --> M_DRIVER
+    E_AUDIT --> M_TYRE
+    E_AUDIT --> M_STRAT
+    E_AUDIT --> M_TELEM
+    E_AUDIT --> M_ANOM
+    E_AUDIT --> M_TEAM
+    E_AUDIT --> M_SIM
+
+    M_CHAMP --> C_STORE
+    M_RACE --> C_STORE
+    M_DRIVER --> C_STORE
+    M_TYRE --> C_STORE
+    M_STRAT --> C_STORE
+    M_TELEM --> C_STORE
+    M_ANOM --> C_STORE
+    M_TEAM --> C_STORE
+    M_SIM --> C_STORE
+
+    C_STORE --> U_ROUTER
+    U_ROUTER --> U_PAGES
+    U_PAGES --> U_THEME
+    U_PAGES --> U_CHARTS
+    U_CHARTS --> OP_USERS
+    OP_USERS -.->|"Adjust Gap, Delta and Simulation Parameters"| U_ROUTER
 ```
-+-----------------------------------------------------------------------------------+
-|                                RAW DATA FEEDS                                     |
-|  - data/2025/processed/season_laps.csv (26,689 rows across 24 Grand Prix)         |
-|  - OpenF1 Live REST API (Optional live telemetry & weather fallback)             |
-+-----------------------------------------+-----------------------------------------+
-                                          |
-                                          v
-+-----------------------------------------------------------------------------------+
-|                        DATA NORMALIZATION & VALIDATION                            |
-|  - src/data/normalization.py (Canonical circuit names, compounds, 3-letter codes) |
-|  - src/data/validation.py (10-point audit, outlier tags, missing value counters)  |
-+-----------------------------------------+-----------------------------------------+
-                                          |
-                                          v
-+-----------------------------------------------------------------------------------+
-|                         CORE INTELLIGENCE ENGINES                                 |
-|  - race.py          - tyres.py          - driver.py          - anomalies.py       |
-|  - strategy.py      - context.py        - telemetry.py       - simulation.py      |
-|  - teams.py         - championship.py                                             |
-+-----------------------------------------+-----------------------------------------+
-                                          |
-                                          v
-+-----------------------------------------------------------------------------------+
-|                     PRECOMPUTED HIGH-SPEED CACHE LAYER                            |
-|  - data/2025/intelligence/*.csv (10 optimized analytical summary tables)          |
-+-----------------------------------------+-----------------------------------------+
-                                          |
-                                          v
-+-----------------------------------------------------------------------------------+
-|                        PRESENTATION LAYER (STREAMLIT + PLOTLY)                    |
-|  - app.py (Navigation router)                                                     |
-|  - src/ui/pages.py (10 specialized dashboard page renderers)                      |
-|  - src/ui/charts.py & src/ui/components.py (Black & Gold theme components)        |
-+-----------------------------------------------------------------------------------+
+
+### Data Pipeline & Precomputation Transformation Flowchart
+
+```mermaid
+flowchart LR
+    %% Style definitions
+    classDef inputStyle fill:#161616,stroke:#44AAFF,stroke-width:2px,color:#FFFFFF;
+    classDef cleanStyle fill:#1a1a1a,stroke:#D4AF37,stroke-width:2px,color:#FFFFFF;
+    classDef processStyle fill:#202020,stroke:#F5D060,stroke-width:2px,color:#FFFFFF;
+    classDef outStyle fill:#121212,stroke:#39B54A,stroke-width:2px,color:#FFFFFF;
+
+    subgraph RawData["Raw Data Ingest"]
+        RAW["season_laps.csv (26,689 Laps)"]:::inputStyle
+    end
+
+    subgraph CleanTransform["Validation and Filter"]
+        VAL["10-Point Schema Audit"]:::cleanStyle
+        TRIM["5% Outlier Trimmed Mean"]:::cleanStyle
+    end
+
+    subgraph ModelCompute["Intelligence Computation"]
+        direction TB
+        F_RACE["Race Pace and Debrief Engine"]:::processStyle
+        F_DNA["5-Axis Empirical Radar Model"]:::processStyle
+        F_TYRE["OLS Degradation and Cliff Detector"]:::processStyle
+        F_ANOM["Lap Pace Z-Score Engine (Z > 2.2)"]:::processStyle
+        F_TEAM["Constructor 24-Round Upgrades"]:::processStyle
+        F_SIM["Monte Carlo Stochastic Model"]:::processStyle
+    end
+
+    subgraph OutputCache["Synchronized Cache (data/2025/intelligence/)"]
+        direction TB
+        CSV1["race_intelligence.csv"]:::outStyle
+        CSV2["driver_profiles.csv and driver_evolution.csv"]:::outStyle
+        CSV3["tyre_intelligence.csv and strategy_intelligence.csv"]:::outStyle
+        CSV4["anomaly_events.csv"]:::outStyle
+        CSV5["team_season_trajectory.csv and pit_efficiency.csv"]:::outStyle
+        CSV6["championship_snapshots.csv"]:::outStyle
+    end
+
+    RAW --> VAL
+    VAL --> TRIM
+    TRIM --> F_RACE
+    TRIM --> F_DNA
+    TRIM --> F_TYRE
+    TRIM --> F_ANOM
+    TRIM --> F_TEAM
+    TRIM --> F_SIM
+
+    F_RACE --> CSV1
+    F_DNA --> CSV2
+    F_TYRE --> CSV3
+    F_ANOM --> CSV4
+    F_TEAM --> CSV5
+    F_SIM --> CSV6
+```
+
+### Tactical Undercut Feasibility Simulator Decision Logic
+
+```mermaid
+flowchart TD
+    %% Style definitions
+    classDef uiIn fill:#1c1c1c,stroke:#D4AF37,stroke-width:2px,color:#FFFFFF;
+    classDef logicCore fill:#242424,stroke:#44AAFF,stroke-width:2px,color:#FFFFFF;
+    classDef decision fill:#2a1a1a,stroke:#E8002D,stroke-width:2px,color:#FFFFFF;
+    classDef actionGreen fill:#122616,stroke:#39B54A,stroke-width:2px,color:#FFFFFF;
+    classDef actionRed fill:#2a1216,stroke:#E8002D,stroke-width:2px,color:#FFFFFF;
+
+    subgraph UserInputs["Race Engineer Tactical Inputs (Streamlit UI)"]
+        UI_GAP["Input: Current Gap to Car Ahead (seconds)"]:::uiIn
+        UI_DELTA["Input: Expected Fresh Tyre Advantage (s/lap)"]:::uiIn
+        UI_LAPS["Input: Laps Before Target Car Responds with Pit"]:::uiIn
+    end
+
+    subgraph MathModel["Tactical Undercut Feasibility Simulator"]
+        CALC_GAIN["Total Fresh Tyre Gain = Fresh Tyre Delta * Laps"]:::logicCore
+        CALC_MARGIN["Undercut Margin = Total Fresh Tyre Gain - Gap"]:::logicCore
+        CHECK{"Is Undercut Margin > 0.0s?"}:::decision
+    end
+
+    subgraph OutcomeStatus["Tactical Recommendation and Confidence"]
+        OUT_FEASIBLE["FEASIBLE: Box this lap for fresh tyres!"]:::actionGreen
+        OUT_DEFEND["NOT FEASIBLE: Stay out, gap too large to jump"]:::actionRed
+    end
+
+    UI_GAP --> CALC_MARGIN
+    UI_DELTA --> CALC_GAIN
+    UI_LAPS --> CALC_GAIN
+    CALC_GAIN --> CALC_MARGIN
+    CALC_MARGIN --> CHECK
+
+    CHECK -- Yes --> OUT_FEASIBLE
+    CHECK -- No --> OUT_DEFEND
 ```
 
 ### 1.1 The Complete 2025 Dataset
